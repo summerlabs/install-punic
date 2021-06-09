@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: summerlabs/install-punic
+      - uses: summerlabs/install-punic@master
       - name: check punic 
         run: punic --version
 
