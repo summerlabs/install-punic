@@ -17,7 +17,7 @@ const run = async () => {
         core.debug('Successfully downloaded binary to bazeliskPath');
         await io.mkdirP(punicBinPath);
         await io.mv(bazeliskPath, `${punicBinPath}/punic`);
-        await exec.exec('chmod', ['+x', `${punicBinPath}/punic`]);
+        //await exec.exec('chmod', ['+x', `${punicBinPath}/punic`]);
         await core.addPath(`${punicBinPath}`);
     } catch(error) {
         core.setFailed(error.message)
