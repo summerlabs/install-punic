@@ -1,0 +1,16 @@
+name: 'Install Punic'
+author: 'Johnson Cheung'
+description: 'Install Punic action for github actions'
+inputs:
+  args:
+    description: 'Install Punic for github actions'
+    required: false 
+    default: ''
+outputs:
+  time:
+    description: "Install punic for github actions"
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+

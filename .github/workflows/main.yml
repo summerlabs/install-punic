@@ -1,0 +1,17 @@
+name: test
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: summerlabs/install-punic@v1.0.0
+      - name: check bazelisk
+        run: punic --version
+
+
+
