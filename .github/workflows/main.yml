@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: summerlabs/install-punic@master
+        with:
+          version: 1.0.0
       - name: check punic 
         run: punic --version
 
